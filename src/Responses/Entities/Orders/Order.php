@@ -22,7 +22,7 @@ class Order
      * @Type("int")
      * @SerializedName("userref")
      */
-    public int $userRef = 0;
+    public ?int $userRef = 0;
 
     /**
      * Status of order
