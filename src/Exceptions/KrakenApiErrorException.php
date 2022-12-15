@@ -8,10 +8,10 @@ class KrakenApiErrorException extends Exception
 {
     public static function fromArray(array $errors): self
     {
-        $message = 'Something went wrong:';
+        $message = '';
 
         foreach ($errors as $error) {
-            $message .= ' <' . $error . '>';
+            $message .= $error;
         }
 
         return new self($message);
