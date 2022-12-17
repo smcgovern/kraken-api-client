@@ -27,4 +27,9 @@ class AssetInfo
      * @SerializedName("display_decimals")
      */
     public int $displayDecimals;
+
+    /**
+     * Status
+     */
+    public string $status;
 }
